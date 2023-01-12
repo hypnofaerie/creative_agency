@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <title>Work with us</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+</head>
+<body class="bg-violet-950 text-teal-100">
+
+    <nav class="fixed w-full bg-violet-950 z-10 opacity-90">
+        <div class="flex justify-between max-w-screen-xl mx-auto">
+            <a href="index.html" class="flex justify-start font-bold font-mono text-2xl font-black tracking-tighter py-4">
+                kreativa
+            </a>
+            <div class="flex justify-end space-x-10 items-center">
+                <a href="index.html#what-we-do" class="p-6 text-sm tracking-tight font-semibold hover:bg-teal-200 hover:text-violet-950">
+                    What we do
+                </a>
+                <a href="index.html#faq" class="p-6 text-sm tracking-tight font-semibold hover:bg-teal-200 hover:text-violet-950">
+                    FAQ
+                </a>
+                <a href="work.html" class="p-6 text-sm tracking-tight font-semibold hover:bg-teal-200 hover:text-violet-950">
+                    Work with us
+                </a>
+            </div>
+        </div>
+    </nav>
+    <main class="">
+        <section class="relative min-h-screen">
+            <div class="max-w-screen-xl mx-auto">
+                <div class="absolute top-0 right-0 w-2/12 opacity-10 rotate-180">
+                    <img src="images/lines_smol.png" alt="">
+                </div>
+                <h1 class="p-28 text-7xl tracking-tight">
+                    Let's start a project together.
+                </h1>
+                <h2 class="pl-80 pb-20 text-2xl">
+                    Focused on helping large companies, small businesses and funded startup seize opportunities, we strive to create meaningful
+                    B2B products, designs and brands for clients all around the world.
+                </h2>
+                <form class="" action="index.html" method="post">
+                    <div class="leading-10">
+                        <p class="py-8 tracking-tight text-sm font-semibold text-gray-300">
+                            <span class="w-16 h-px bg-gray-300 inline-block mb-1 mr-4"></span>
+                            Tell us about your business
+                        </p>
+                        <div class="flex flex-col ml-40">
+                            <label for="name-input" class="relative required-input mb-10">
+                                <input class="w-full placeholder:text-gray-600 bg-transparent border-b-2 border-gray-600 text-lg py-2 px-4 outline-0 focus-visible:bg-gray-800 focus-visible:border-teal-600 focus-visible:placeholder:text-gray-700"
+                                placeholder="Full name"
+                                type="text"
+                                name=""
+                                value=""
+                                required
+                                id="name-input">
+                            </label>
+                            <label for="email-input" class="relative required-input mb-10">
+                                <input class="w-full placeholder:text-gray-600 bg-transparent border-b-2 border-gray-600 text-lg py-2 px-4 outline-0 focus-visible:bg-gray-800 focus-visible:border-teal-600 focus-visible:placeholder:text-gray-700"
+                                placeholder="Email address"
+                                type="text"
+                                name=""
+                                value=""
+                                required
+                                id="email-input">
+                            </label>
+                            <input class="placeholder:text-gray-600 mb-10 bg-transparent border-b-2 border-gray-600 text-lg py-2 px-4 outline-0 focus-visible:bg-gray-800 focus-visible:border-teal-600 focus-visible:placeholder:text-gray-700" placeholder="Company name" type="text" name="" value="">
+                            <input class="placeholder:text-gray-600 mb-10 bg-transparent border-b-2 border-gray-600 text-lg py-2 px-4 outline-0 focus-visible:bg-gray-800 focus-visible:border-teal-600 focus-visible:placeholder:text-gray-700" placeholder="Current URL" type="text" name="" value="">
+                        </div>
+                    </div>
+                    <div class="">
+                        <p class="py-8 tracking-tight text-sm font-semibold text-gray-300">
+                            <span class="w-16 h-px bg-gray-300 inline-block mb-1 mr-4"></span>
+                            What can we help you with? *
+                        </p>
+                        <div class="grid grid-cols-2 gap-10 ml-40 mb-10">
+                                <label class="form-control  px-4 py-2 text-gray-600 text-lg border-b-2 border-gray-600">
+                                    Branding
+                                    <input type="checkbox" name="branding" checked>
+                                </label>
+                                <label class="form-control  px-4 py-2 text-gray-600 text-lg border-b-2 border-gray-600">
+                                    UI/UX Design
+                                    <input type="checkbox" name="ux">
+                                </label>
+                                <label class="form-control  px-4 py-2 text-gray-600 text-lg border-b-2 border-gray-600">
+                                    Ongoing support
+                                    <input type="checkbox" name="support">
+                                </label>
+                                <label class="form-control  px-4 py-2 text-gray-600 text-lg border-b-2 border-gray-600">
+                                    Other
+                                    <input type="checkbox" name="other">
+                                </label>
+
+                        </div>
+
+                    </div>
+                    <div class="">
+                        <p class="py-8 tracking-tight text-sm font-semibold text-gray-300">
+                            <span class="w-16 h-px bg-gray-300 inline-block mb-1 mr-4"></span>
+                            Tell us about your project *
+                        </p>
+                        <div class="flex flex-col ml-40">
+                            <input class="placeholder:text-gray-600 mb-10 bg-transparent border-b-2 border-gray-600 text-lg py-2 px-4 outline-0 focus-visible:bg-gray-800 focus-visible:border-teal-600 focus-visible:placeholder:text-gray-700"
+                                placeholder="Describe the project in your words" type="text" name="" value="">
+                            <input class="placeholder:text-gray-600 mb-10 bg-transparent border-b-2 border-gray-600 text-lg py-2 px-4 outline-0 focus-visible:bg-gray-800 focus-visible:border-teal-600 focus-visible:placeholder:text-gray-700"
+                                placeholder="What is your timeline expectation?" type="text" name="" value="">
+                            <button class="dropdown text-left text-gray-600 mb-10 bg-transparent border-b-2 border-gray-600 text-lg py-2 px-4 outline-0 focus:border-teal-600 focus:text-gray-700"
+                                type="button" name="dropdown-button" aria-expanded="false"aria-controls="budget-dropdown">
+                                <span>
+                                    What is your budget expectation?
+                                </span>
+                                <ul class="dropdown__menu w-full border-t-2 border-gray-600" id="budget-dropdown">
+                                    <li>500$</li>
+                                    <li>500 - 1000$</li>
+                                    <li>1000$ - 2000$</li>
+                                </ul>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-end mb-10">
+                        <button type="button" name="button" class="mt-4 py-3 px-7 bg-teal-200 text-violet-950 text-xs font-bold">Send inquiry</button>
+                    </div>
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+
+</body>
+
+<script src="tailwind.config.js"></script>
+<script src="script.js"></script>
+</html>

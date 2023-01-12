@@ -1,0 +1,176 @@
+/* faq accordion */
+.accordion > div.tab::after {
+    content: "";
+    width: 15px;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #e5e7eb;
+}
+
+.accordion > div.tab {
+    position: relative;
+}
+
+.tab input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.tabs,
+.tab {
+  overflow: hidden;
+}
+
+.tab p {
+    cursor: pointer;
+}
+
+.tab-content {
+  max-height: 0;
+  padding: 0 1em;
+  color: #ccfbf1;
+  transition: all 0.35s;
+}
+
+.tab input:checked ~ .tab-content {
+  max-height: 100vh;
+  padding-top: 2em;
+  padding-left: 5.3em;
+  color: #134e4a;
+}
+
+.tab input:checked ~ label .plus {
+    display: none;
+}
+
+.tab input:checked ~ label .minus {
+    display: inline;
+}
+
+.tab input:not(:checked) ~ label .minus {
+    display: none;
+}
+
+.tab input:not(:checked) ~ label .plus {
+    display: inline;
+}
+
+
+
+/* form */
+.required-input:after {
+    content: "*";
+    position: absolute;
+    right: 10px;
+    color: #4b5557;
+}
+
+.required-input:has(input:focus-visible):after {
+    color: #0d9488;
+}
+
+.form-control {
+    /* font-size: 2rem; */
+    /* font-weight: bold; */
+    /* line-height: 1.1; */
+    display: grid;
+    grid-template-columns: auto 1em ;
+    /* gap: 0.5em; */
+}
+
+input[type="checkbox"] {
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    appearance: none;
+    /* For iOS < 15 to remove gradient background */
+    background-color: #28222f;
+    /* Not removed via appearance */
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 1em;
+    height: 1em;
+    border: 0.1em solid currentColor;
+    transform: translateY(0.1em);
+    display: grid;
+    place-content: center;
+}
+
+input[type="checkbox"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em #0d9488;
+    /* Windows High Contrast Mode */
+    background-color: CanvasText;
+    transform-origin: bottom left;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}
+
+.form-control:has(input[type='checkbox']:checked) {
+    background: #1f2937;
+    color: white;
+}
+
+.dropdown {
+    position: relative;
+
+}
+
+.dropdown__menu {
+    box-shadow: 0 0.15em 0.25em rgba(black, 0.25);
+    min-width: 15ch;
+    z-index: 10;
+    background-color: #28222f;
+
+    position: absolute;
+    left: 50%;
+    margin-top: 7px;
+
+    /* hide menu */
+    transform: rotateX(-90deg) translateX(-50%);
+    transform-origin: top center;
+    opacity: 0.3;
+    transition: 280ms all ease-out;
+}
+
+.dropdown:focus-within .dropdown__menu {
+    opacity: 1;
+    transform: rotateX(0) translateX(-50%);
+    visibility: visible;
+}
+
+
+.dropdown::after {
+    content: "";
+    border: 0.35rem solid transparent;
+    border-top-color: currentColor;
+    margin-left: 0.25em;
+    transform: translateY(0.15em);
+    position: absolute;
+    right: 0;
+    top: 18px;
+}
+
+.dropdown li {
+    color: currentColor;
+    display: block;
+    padding: 0.5em;
+}
+
+.dropdown li:hover {
+    background: #99f6e4;
+}
+
+footer a:hover {
+    color: rgb(243 244 246);
+}
